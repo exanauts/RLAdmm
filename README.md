@@ -14,15 +14,20 @@ Install the rest of the packages.
 pip install -r requirements.txt
 ```
 
-# Copying ExaComDecOPF solver
-In this folder
+### ExaComDecOPF solver
 
+The current implementation is based on an old ADMM solver `ExaComDecOPF` with some minor modification for the purpose of training the RL model.
+This would better be replaced by `ExaAdmm.jl` later.
 
 ## Training a policy
 Training can be started by running
 ```
 python train_dqn_entrywise.py --num_case 9 --max_episodes 1000 --max_iters 3000 --use_baseline
 ```
+
+## Publication
+
+- Sihan Zeng, Alyssa Kody, Youngdae Kim, Kibaek Kim, and Daniel K Molzahn. "A Reinforcement Learning Approach to Parameter Selection for Distributed Optimization in Power Systems" arXiv preprint arXiv:2110.11991, 2021 (to appear in PSCC 2022)
 
 ## Acknowledgements
 
