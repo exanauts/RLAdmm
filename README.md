@@ -23,3 +23,7 @@ Training can be started by running
 ```
 python train_dqn_entrywise.py --num_case 9 --max_episodes 1000 --max_iters 3000 --use_baseline
 ```
+
+## Acknowledgements
+
+This material is based upon work supported by the U.S. Department of Energy, Office of Science, under contract number DE-AC02-06CH11357.
